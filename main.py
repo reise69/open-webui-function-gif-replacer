@@ -30,7 +30,7 @@ import requests
 from pydantic import BaseModel, Field
 from typing import Optional, Callable, Any, Awaitable
 
-class GiphyGifReplacerFilter:
+class Filter:
     """
     A filter to replace text commands with random GIFs from Giphy
     """
@@ -224,6 +224,3 @@ class GiphyGifReplacerFilter:
             )
 
         return body
-
-# Alias for Open WebUI compatibility
-Filter = GiphyGifReplacerFilter
